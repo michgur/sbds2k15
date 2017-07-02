@@ -5,7 +5,6 @@ import android.media.MediaPlayer;
 import android.os.Handler;
 import android.support.annotation.RawRes;
 import android.util.AttributeSet;
-import android.widget.TextView;
 
 public class TypeWriter extends android.support.v7.widget.AppCompatTextView
 {

@@ -1,11 +1,9 @@
 package com.cyhim.sbds2k15;
 
-import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
 import android.content.SharedPreferences;
-import android.content.SharedPreferences.Editor;
 import android.content.res.Resources;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
@@ -22,7 +20,7 @@ import java.util.Random;
 
 public class SBDS
 {
-    private static final ColorDrawable BACKGROUND = new ColorDrawable(-4146234);
+    private static final ColorDrawable BACKGROUND = new ColorDrawable(0xFFC0BBC6);
     private static final int BUTTON = R.drawable.sbdbutton;
     private static final int BUTTON_SELECTED = R.drawable.sbdbutton_selected;
     private static final int GLOW_RES = R.drawable.glow;
@@ -40,11 +38,11 @@ public class SBDS
             List<SBDOption> next = SBDOption.getRandomOptions(options.length);
             for (int i = 0; i < options.length; i++) {
                 OptionButton o = options[i];
-                o.getFrame().setBackground(SBDS.BACKGROUND);
+                o.getFrame().setBackground(BACKGROUND);
                 o.setOption(next.get(i));
                 o.update();
                 o.getButton().setEnabled(true);
-                o.getButton().setBackgroundResource(2130837601);
+                o.getButton().setBackgroundResource(BUTTON);
             }
         }
     };

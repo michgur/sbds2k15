@@ -5,17 +5,14 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 public class GameActivity extends AppCompatActivity
 {
-    private static final int UI_ANIMATION_DELAY = 300;
     private View view;
     private SBDS game;
-    private final Handler hideHandler = new Handler();
 
     @SuppressLint("InlinedApi")
     public void hideSystemUI() { view.setSystemUiVisibility(4871); }
